@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function(){
+            　　var scrollTop = $(this).scrollTop();
+            　　var scrollHeight = $(document).height();
+            　　var windowHeight = $(this).height();
+            console.log(scrollTop + windowHeight - scrollHeight);
+            　　if(scrollTop + windowHeight == scrollHeight){
+            　　　　alert("you are in the bottom");
+            　　}
+            });
+        });
+    
+    
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 3000px; background-color: Blue;">
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" id="Viewport" content="">
+<script>
+	var width = screen.width;
+	var mvp = document.getElementById('Viewport');
+	if(width>680){
+		width = 680;
+	}
+	mvp.setAttribute('content','width=device-width,initial-scale='+(width/680)+',user-scalable=no');
+	// alert(width);
+</script>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<!-- top -->
+<div class="top_wrap">
+	<div class="logo"><img src="images/logo.png" /></div>
+	<div class="user" id="user">
+		<img src="images/user.jpg" width="29" />
+		<div class="u_cover"></div>
+		<ul class="u_center">
+			<li><a href="person_center.html">个人中心</a></li>
+			<li><a href="">退出</a></li>
+		</ul>
+	</div>
+</div>
+<!-- top -->
+<div class="clear"></div>
+<!-- top nav -->
+<div class="top_nav">
+	<ul class="menu1">
+		<li class="line" id="hot">热门</li>
+		<ul class="menu2">
+			<li><a href="">热门</a></li>
+			<li><a href="">discovery吃</a></li>
+			<li><a href="">discovery玩</a></li>
+			<li><a href="">老乡帮帮忙</a></li>
+		</ul>
+		<li><a href="guanzhu.html">关注</a></li>
+	</ul>	
+</div>
+<!-- top nav -->
+<!-- 话题预览 -->
+<div class="ht">
+	<div class="user_box">
+	<a href="#"><div class="user_wrap">
+		<div class="user white"><img src="images/user.jpg" width="45" /><div class="u_cover"></div></div>
+		<div class="user_name">草一直很青<br/><b style="color:#a8a8a8">莱州</b></div></div></a>
+		<div class="title"><a href="ht_detail.html">致莱州，我小时候的老家</a></div>
+	</div>
+	<div class="ht_img">
+		<a href="ht_detail.html"><img src="images/test1.jpg" /></a>
+		<div class="biaoqian"></div>
+	</div>
+	<div class="ht_data">
+		<b class="read">1171</b>
+		<b class="like">45171</b>
+		<b class="time">5天前</b>
+	</div>
+</div>
+<div class="ht">
+	<div class="user_box line2">
+	<a href="#"><div class="user_wrap">
+		<div class="user white"><img src="images/user.jpg" width="45" /><div class="u_cover"></div></div>
+		<div class="user_name">草一直很青<br/><b style="color:#a8a8a8">莱州</b></div></div></a>
+		<div class="title"><a href="">致莱州，我小时候的老家我小时候的老家</a></div>
+	</div>
+	<div class="ht_img">
+		<a href=""><img src="images/test1.jpg" /></a>
+		<div class="biaoqian"></div>
+	</div>
+	<div class="ht_data">
+		<b class="read">1171</b>
+		<b class="like">45171</b>
+		<b class="time">5天前</b>
+	</div>
+</div>
+<!-- 话题预览 -->
+<!-- 发表话题 -->
+<a class="publish_ht" href="publish_ht.html">
+</a>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" id="Viewport" content="">
+<script>
+	var width = screen.width;
+	var mvp = document.getElementById('Viewport');
+	if(width>680){
+		width = 680;
+	}
+	mvp.setAttribute('content','width=device-width,initial-scale='+(width/680)+',user-scalable=no');
+	// alert(width);
+</script>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body style="background-color:#fff;">
+<div class="replay_c">
+	<a href="" class="return"><img src="images/icon_23.png" /></a>
+	<h4>评论</h4>
+</div>
+<!-- ① 没有评论显示   暂无评论 -->
+<div class="no_box"><div class="no_comment">暂无评论</div></div>
+<!-- ②  有评论 显示评论 -->
+<!-- ①  ② 不能共存只能显示一种方式-->
+<div class="comment_wrap" style="display:none;">
+	<div class="comment_box">
+		<div class="user white"><img src="images/user.jpg" width="45" /><div class="u_cover"></div></div>
+		<div class="comment_text">
+			<a href="" class="title">草一直很青</a>
+			<p class="c_content">先后在北京、上海和广州复是啊焦点网好的我州复是啊焦点网好的我····</p>
+		</div>
+	</div>
+	<div class="comment_box">
+		<div class="user white"><img src="images/user.jpg" width="45" /><div class="u_cover"></div></div>
+		<div class="comment_text">
+			<a href="" class="title">草一直很青</a>
+			<p class="c_content">先后在北京、上海和广州复····</p>
+		</div>
+	</div>
+</div>
+<div class="input_c_box"><a href="replay_c.html" class="input_comment">输入评论</a></div>
+</body>
+</html>
